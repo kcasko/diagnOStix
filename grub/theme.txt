@@ -1,0 +1,52 @@
+# DiagnOStiX GRUB Theme (with translucent menu box)
+
+# Boot menu settings with backdrop and menu box
++ boot_menu {
+    left = 10%
+    top = 65%
+    width = 80%
+    height = 25%
+    item_height = 32
+    item_padding = 2
+    item_spacing = 1
+    icon_width = 24
+    icon_height = 24
+    font = "unicode.pf2"
+    color_normal = "white/black"
+    color_highlight = "black/light-gray"
+    backdrop = "wallpaper.png"
+
+    # Add a semi-transparent black box behind the menu
+    menu_pixmap_style = "box"
+    menu_color_normal = "white/#00000080"      # white text on translucent black
+    menu_color_highlight = "black/#FFFFFF80"   # black text on translucent white
+}
+
+# Title text
++ label {
+    text = "DiagnOStiX"
+    left = 5%
+    top = 5%
+    width = 90%
+    height = 10%
+    font = "unicode.pf2"
+    color = "white"
+}
+
+# Logo (top-right corner)
++ image {
+    file = "diagnostix-logo.png"
+    left = 90%
+    top = 6%
+    width = 64
+    height = 64
+}
+
+# Footer watermark (stretched across bottom)
++ image {
+    file = "watermark.png"
+    left = 0%
+    top = 92%
+    width = 100%
+    height = 8%
+}
